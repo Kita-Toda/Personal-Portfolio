@@ -1,0 +1,27 @@
+#blog {
+  border: 3px solid black;
+  outline-color: black;
+  width: 100px;
+  height: 100px;
+}
+
+#portfolio {
+  border: 4px solid black;
+  outline-color: black;
+  width: 100px;
+  height: 100px;
+}
+
+#contact {
+  border: 2px solid black;
+  outline-color: black;
+  width: 100px;
+  height: 100px;
+}
+
+#about {
+  border: 1px solid black;
+  outline-color: black;
+  width: 100px;
+  height: 100px;
+}
