@@ -1,28 +1,233 @@
-#blog {
-  top: 500px;
+header h1 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  text-align: left;
+  font-family: 'Playfair Display', serif;
+}
+/*
+  THE FIRST BOX
+ */
+
+.content {
+  position: absolute;
+  left: 65%;
+}
+.content .blog.box {
+  background-color: white;
+}
+
+.content .portfolio.box {
+  background-color: white;
+}
+.content .contact.box {
+  background-color: white;
+}
+.content .about.box {
+  background-color: white;
+}
+
+.blog.box {
+  background-color: transparent;
+  position: absolute;
+  left: calc(-30vw - 5vw);
+  height: 300px;
+  width: 20vw;
+}
+
+.portfolio.box {
+  background-color: transparent;
+  position: absolute;
+  top: 303px;
+  left: calc(-10vw - 1px);
+  height: 300px;
+  width: 20vw;
+}
+
+.contact.box {
+  background-color: transparent;
+  position: absolute;
+  top: 303px;
+  left: calc(-30vw - 4px);
+  height: 350px;
+  width: 20vw;
+}
+
+.about.box {
+  background-color: transparent;
+  position: absolute;
+  height: 300px;
+  width: 20vw;
+  left: calc(-15vw + 3px);
+}
+/*
+    THE 2ND BOX
+ */
+
+.text-content {
+  position: absolute;
+  left: 65%;
+  z-index: -1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+}
+
+.text-content .box {
+  border: 3px solid transparent;
+  background-color: transparent;
+}
+
+.content .box {
   border: 3px solid black;
-  outline-color: black;
-  width: 100px;
-  height: 100px;
 }
 
-#portfolio {
-  border: 4px solid black;
-  outline-color: black;
-  width: 100px;
-  height: 100px;
+.text-content h2 {
+  position: absolute;
+  margin: 0;
 }
 
-#contact {
-  border: 2px solid black;
-  outline-color: black;
-  width: 100px;
-  height: 100px;
+.text-content .about.box h2 {
+  top: 40px;
+  right: -22px;
+  transform: rotate(90deg);
+}
+.text-content .blog.box h2 {
+  top: 40px;
+}
+.text-content .contact.box h2 {
+  bottom: 50px;
+  left: -25px;
+  transform: rotate(-90deg);
+}
+.text-content .portfolio.box h2 {
+  right: 0px;
+  bottom: 0px;
 }
 
-#about {
-  border: 1px solid black;
-  outline-color: black;
-  width: 100px;
-  height: 100px;
+/* #div1 {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  border: 5px solid black;
 }
+
+#div2 {
+  position: relative;
+  top: -50px;
+  left: -50px;
+  bottom: -50px;
+  height: 302px;
+  width: 302px;
+  background-color: white;
+  border-radius: 15px;
+} */
+
+.social {
+  position: absolute;
+  bottom: 50px;
+  width: 400px;
+  left: 50%;
+  height: 100px;
+  background-color: ghostwhite;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.social .fa {
+  margin-left: 5px;
+  margin-top: 25px;
+  left: 50%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+/*
+          FUTURE REFERENCE FOR FLOATS
+.parent {
+  background: yellow;
+}
+
+.custom-box {
+  background: black;
+  width: 50%;
+  height: 80px;
+  float: left;
+} */
+
+/*
+        INITIAL CSS
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+div,
+ul,
+ol,
+li {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font: inherit;
+  font-size: 100%;
+  margin-top: 200px;
+  margin-left: 200px;
+}
+
+h1 {
+  position: fixed;
+  top: 0px;
+  left: 100px;
+}
+
+.blog {
+  outline-color: #000;
+  width: 250px;
+  height: 250px;
+  position: fixed;
+  border: 5px solid #000;
+  top: 153px;
+  margin-left: -55px;
+}
+
+.portfolio {
+  border: 8px solid #000;
+  outline-color: #000;
+  width: 450px;
+  height: 275px;
+  margin: auto;
+  position: fixed;
+  margin-left: 200px;
+  margin-top: -78px;
+}
+
+.contact {
+  border: 2px solid #000;
+  outline-color: #000;
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  position: relative;
+  bottom: -211px;
+  margin-left: -100px;
+}
+
+.about {
+  border: 6px solid #000;
+  outline-color: #000;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  margin-top: -97px;
+  margin-left: 304px;
+}
+ */
