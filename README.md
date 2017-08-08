@@ -9,7 +9,13 @@
 
     I love-heart(symbol) designing websites that have a sense of personality for the client to express themselves online. When I'm not making websites I love being an open-sourcer, hacker, well-informed tech-enthusiast, poker player.
 
-    My skills vary and consider myself a Philomath.
+    My skills consists of:
+
+    Favourite:
+
+    Least Favourite:
+
+    Learning:
 
 # Languages used:
   - HTML | CSS
@@ -21,3 +27,9 @@
 # Fonts:
   - Google Fonts
   - Awesome Fonts
+
+  - Helvetica
+  - Clarendon
+  - Avenir
+  - Futura
+  - Gill Sans

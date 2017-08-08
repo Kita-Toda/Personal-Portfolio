@@ -186,8 +186,14 @@ header h1 {
 } */
 
 /*
-    TOP HEADING OF
+    TOP HEADING OF ABOUT
  */
+
+.about p {
+  position: relative;
+  top: 800px;
+  left: 15%;
+}
 
 .about h1 {
   position: relative;
