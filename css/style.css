@@ -1,3 +1,7 @@
+html {
+  background-color: #ecf3f3;
+}
+
 header h1 {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -15,16 +19,16 @@ header h1 {
   height: 3000px;
 }
 .content .blog.box {
-  background-color: white;
+  background-color: #ecf3f3;
 }
 .content .portfolio.box {
-  background-color: white;
+  background-color: #ecf3f3;
 }
 .content .contact.box {
-  background-color: white;
+  background-color: #ecf3f3;
 }
 .content .about.box {
-  background-color: white;
+  background-color: #ecf3f3;
 }
 
 /*
@@ -186,38 +190,97 @@ header h1 {
 } */
 
 /*
-    TOP HEADING OF ABOUT
+    TOP HEADING OF ABOUT | SKILLS | PORTFOLIO
  */
+
+.about p,
+.skills p,
+.portfolio p {
+  font-family: Helvetica;
+  font-size: 20px;
+}
+
+.about h1,
+.skills h1,
+.portfolio h1 {
+  position: relative;
+  top: 150px;
+  left: 50%;
+  font-family: Helvetica;
+}
+
+/*
+      ABOUT
+ */
+
+.about-container {
+  position: absolute;
+  background-color: #3498db;
+  width: 100vw;
+  top: 1000px;
+  height: 700px;
+  color: white;
+}
+
+/* .about .fa {
+  position: relative;
+  top: 170px;
+  left: 10vw;
+} */
 
 .about p {
   position: relative;
-  top: 800px;
-  left: 15%;
+  top: 200px;
+  left: 1vw;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
-.about h1 {
-  position: relative;
-  top: 800px;
-  left: 50%;
+.about img {
+  height: 50px;
+  width: 50px;
+}
+
+/*
+      SKILLS
+ */
+/* .skills-container {
+  position: absolute;
+  background-color: #1abc9c;
+  width: 100vw;
+  top: 1700px;
+  height: 700px;
+  color: white;
+} */
+
+.skills {
+  z-index: 1;
 }
 
 .skills h1 {
   position: relative;
   top: 1500px;
+  left: 45vw;
+}
+
+.skills p {
+  position: relative;
+  top: 1550px;
   left: 50%;
+  margin-top: 75px;
 }
 
 .portfolio h1 {
   position: relative;
   top: 2000px;
-  left: 50%;
+  left: 48%;
 }
 
 .social {
   position: relative;
-  bottom: -2500px;
-  width: 35vw;
-  left: 35%;
+  bottom: -2100px;
+  width: 43vw;
+  left: 30%;
   height: 200px;
   background-color: ghostwhite;
   box-shadow: 10px 10px 5px #888888;
