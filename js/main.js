@@ -101,3 +101,41 @@ $(document).ready(function() {
     );
   });
 });
+
+// SMOOTH SCROLL
+
+$("#about-button").click(function() {
+  $("html, body").animate(
+    {
+      scrollTop: $("#about-section").offset().top
+    },
+    1000
+  );
+});
+// ADD THE BLOG BUTTON
+// $("#about-button").click(function() {
+//   $("html, body").animate(
+//     {
+//       scrollTop: $("#about-section").offset().top
+//     },
+//     1000
+//   );
+// });
+// ADD THE CONTACT BUTTON
+// $("#about-button").click(function() {
+//   $("html, body").animate(
+//     {
+//       scrollTop: $("#about-section").offset().top
+//     },
+//     1000
+//   );
+// });
+// ADD THE PORTFOLIO BUTTON
+// $("#about-button").click(function() {
+//   $("html, body").animate(
+//     {
+//       scrollTop: $("#about-section").offset().top
+//     },
+//     1000
+//   );
+// });

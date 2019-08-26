@@ -2,6 +2,11 @@ html {
   background-color: #ecf3f3;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 header h1 {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -10,13 +15,16 @@ header h1 {
   font-family: 'Playfair Display', serif;
 }
 /*
-  THE FIRST BOX
+  CONTENT
  */
+
+.hero-section {
+  height: 800px;
+}
 
 .content {
   position: absolute;
   left: 65%;
-  height: 3000px;
 }
 .content .blog.box {
   background-color: #ecf3f3;
@@ -121,7 +129,7 @@ header h1 {
   left: calc(-15vw + 3px);
 }
 /*
-    THE 2ND BOX
+    TEXT CONTENT - BOX OVERLAYS
  */
 
 .text-content {
@@ -190,8 +198,19 @@ header h1 {
 } */
 
 /*
-    TOP HEADING OF ABOUT | SKILLS | PORTFOLIO
+      ABOUT
  */
+
+.about-container {
+  /* position:absolute; */
+  background-color: #3498db;
+  /* width: 100vw; */
+  padding: 40px;
+  text-align: center;
+  /* top: 1000px; */
+  /* height: 700px; */
+  color: white;
+}
 
 .about p,
 .skills p,
@@ -203,23 +222,10 @@ header h1 {
 .about h1,
 .skills h1,
 .portfolio h1 {
-  position: relative;
+  /* position: relative; */
   top: 150px;
-  left: 50%;
+  left: 45vw;
   font-family: Helvetica;
-}
-
-/*
-      ABOUT
- */
-
-.about-container {
-  position: absolute;
-  background-color: #3498db;
-  width: 100vw;
-  top: 1000px;
-  height: 700px;
-  color: white;
 }
 
 /* .about .fa {
@@ -228,157 +234,192 @@ header h1 {
   left: 10vw;
 } */
 
+.about .heart {
+  height: 25px;
+  width: 50px;
+}
+
 .about p {
-  position: relative;
+  /* position: relative; */
   top: 200px;
   left: 1vw;
   letter-spacing: 1px;
   text-align: center;
 }
 
-.about img {
-  height: 50px;
-  width: 50px;
-}
-
 /*
       SKILLS
  */
-/* .skills-container {
-  position: absolute;
-  background-color: #1abc9c;
-  width: 100vw;
-  top: 1700px;
-  height: 700px;
-  color: white;
-} */
+
+.skills-container {
+  /*   position: absolute; */
+  background-color: #e14d4c;
+  /* width: 100vw; */
+  /*   top: 1700px; */
+  padding: 40px;
+  text-align: center;
+}
 
 .skills {
-  z-index: 1;
+  color: white;
 }
 
 .skills h1 {
-  position: relative;
-  top: 1500px;
+  /* position: relative; */
+  top: 1650px;
   left: 45vw;
 }
 
 .skills p {
-  position: relative;
-  top: 1550px;
-  left: 50%;
-  margin-top: 75px;
+  /* position: relative; */
+  top: 1650px;
+  left: 25%;
+  margin-top: 50px;
+}
+
+.fav_img1,
+.fav_img2,
+.fav_img3,
+.fav_img4,
+.fav_img5,
+.fav_img6,
+.fav_img7,
+.fav_img8 {
+  /* position: relative; */
+  /* top: 1250px; */
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+.fav_group {
+  /* position: relative; */
+  top: 430px;
+  left: 30vw;
+}
+
+.least_fav1,
+.least_fav2 {
+  /* position: relative; */
+  top: 0px;
+  left: 0px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+.least_fav3 {
+  /* position: relative; */
+  top: 0px;
+  left: 0px;
+  height: 100px;
+  display: inline-block;
+}
+
+.least_fav_group {
+  /* position: relative; */
+  top: 1680px;
+  left: 30vw;
+}
+
+.learn_group {
+  /* position: relative; */
+  top: 1675px;
+  left: 30vw;
+}
+
+.learn1,
+.learn2,
+.learn3 {
+  /* position: relative; */
+  top: 0px;
+  left: 0px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+.portfolio_container {
+  /* position: absolute; */
+  background-color: #145d8e;
+  /* width: 100vw; */
+  /* top: 2825px; */
+  /* height: 400px; */
+  /* DELETE HEIGHT AFTER COMPLETED PORTFOLIO SECTION*/
+  padding: 40px;
 }
 
 .portfolio h1 {
-  position: relative;
-  top: 2000px;
-  left: 48%;
+  /* position: relative; */
+  top: 150px;
+  color: white;
+  text-align: center;
+}
+
+.row {
+  width: auto;
+  text-align: center;
+}
+
+.row .column {
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .social {
-  position: relative;
-  bottom: -2100px;
-  width: 43vw;
+  /* position: relative; */
+  /* top: 2600px; */
+  width: 600px;
   left: 30%;
   height: 200px;
   background-color: ghostwhite;
   box-shadow: 10px 10px 5px #888888;
+  margin: 0 auto;
 }
 
 .social .fa {
   margin-left: 27px;
   margin-top: 77px;
   left: 50%;
+  margin-bottom: 100px;
 }
 
 footer {
-  position: absolute;
-  bottom: 0px;
+  /*   position: absolute; */
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
-/*
-          FUTURE REFERENCE FOR FLOATS
-.parent {
-  background: yellow;
+@media screen and (max-width: 600px) {
+  .social {
+    /* position: relative; */
+    /* top: 2600px; */
+    width: 100%;
+    left: 30%;
+    height: auto;
+    background-color: ghostwhite;
+    box-shadow: none;
+    margin: 0 auto;
+  }
+
+  .social .fa {
+    /* margin-left: 27px;
+    margin-top: 77px; */
+    display: inline-block;
+    width: 20%;
+    left: 50%;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    /* margin-bottom: 100px; */
+  }
+
+  footer {
+    /*   position: absolute; */
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 40px 10px;
+    background-color: ghostwhite;
+  }
 }
 
-.custom-box {
-  background: black;
-  width: 50%;
-  height: 80px;
-  float: left;
-} */
-
-/*
-        INITIAL CSS
-
-html,
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-div,
-ul,
-ol,
-li {
-  padding: 0;
-  border: 0;
-  margin: 0;
-  font: inherit;
-  font-size: 100%;
-  margin-top: 200px;
-  margin-left: 200px;
+@media screen and (min-width: 601px) and (max-width: 768px) {
 }
-
-h1 {
-  position: fixed;
-  top: 0px;
-  left: 100px;
-}
-
-.blog {
-  outline-color: #000;
-  width: 250px;
-  height: 250px;
-  position: fixed;
-  border: 5px solid #000;
-  top: 153px;
-  margin-left: -55px;
-}
-
-.portfolio {
-  border: 8px solid #000;
-  outline-color: #000;
-  width: 450px;
-  height: 275px;
-  margin: auto;
-  position: fixed;
-  margin-left: 200px;
-  margin-top: -78px;
-}
-
-.contact {
-  border: 2px solid #000;
-  outline-color: #000;
-  width: 400px;
-  height: 300px;
-  margin: auto;
-  position: relative;
-  bottom: -211px;
-  margin-left: -100px;
-}
-
-.about {
-  border: 6px solid #000;
-  outline-color: #000;
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  margin-top: -97px;
-  margin-left: 304px;
-}
- */

@@ -33,3 +33,8 @@
   - Avenir
   - Futura
   - Gill Sans
+
+  Frank's recommendation advice
+
+  - Make h1 into h2 size abit bigger
+  -
