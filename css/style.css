@@ -203,13 +203,21 @@ header h1 {
 
 .about-container {
   /* position:absolute; */
-  background-color: #3498db;
+  /* background-color: #3498db; */
+  background-color: #000000;
   /* width: 100vw; */
-  padding: 40px;
+  /* padding: 40px; */
   text-align: center;
   /* top: 1000px; */
   /* height: 700px; */
   color: white;
+  padding: 40px 20px 80px;
+  overflow: hidden;
+}
+.about-section__heading {
+  font-family: Helvetica;
+  font-size: 2em;
+  margin-bottom: 40px;
 }
 
 .about p,
@@ -217,6 +225,9 @@ header h1 {
 .portfolio p {
   font-family: Helvetica;
   font-size: 20px;
+}
+.about p {
+  margin: 10px;
 }
 
 .about h1,
@@ -247,13 +258,35 @@ header h1 {
   text-align: center;
 }
 
+.about {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 2;
+}
+.about-section__background-image-container {
+  width: 100%;
+  z-index: 1;
+}
+.about-section__background-image {
+  width: 120%;
+  height: 120%;
+  position: relative;
+  min-height: 600px;
+  top: -40px;
+  left: -10%;
+  object-fit: cover;
+}
+
 /*
       SKILLS
  */
 
 .skills-container {
   /*   position: absolute; */
-  background-color: #e14d4c;
+  /* background-color: #e14d4c; */
+  background: linear-gradient(to right, rgba(0,0,0,1),rgba(0,0,0,0.1), rgba(0,0,0,1)), url('../images/dna-background.jpg');
+  background-size: cover;
   /* width: 100vw; */
   /*   top: 1700px; */
   padding: 40px;

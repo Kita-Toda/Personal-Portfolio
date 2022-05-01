@@ -139,3 +139,15 @@ $("#about-button").click(function() {
 //     1000
 //   );
 // });
+
+// PARALLAX
+var aboutSection = document.getElementById('about-section');
+var parallaxInstance = new Parallax(aboutSection);
+
+$(window).scroll(function(e){
+  // console.log('scrolling');
+  var scrollPosition = $(window).scrollTop() + 500;
+  var moveSpeed = 0.5;
+  var scrollMod = (scrollPosition * moveSpeed);
+  $('.skills-container').css({"background-position-y":scrollMod});
+});
