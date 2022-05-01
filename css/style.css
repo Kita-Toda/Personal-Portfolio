@@ -410,12 +410,19 @@ header h1 {
 .social {
   /* position: relative; */
   /* top: 2600px; */
-  width: 600px;
+  display: inline-block;
+  padding: 0px 50px;
+  width: auto;
   left: 30%;
   height: 200px;
   background-color: ghostwhite;
   box-shadow: 10px 10px 5px #888888;
-  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.social-link {
+  display: inline-block;
 }
 
 .social .fa {
@@ -428,6 +435,7 @@ header h1 {
 footer {
   /*   position: absolute; */
   font-family: "Montserrat Alternates", sans-serif;
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {
