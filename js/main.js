@@ -141,8 +141,10 @@ $("#about-button").click(function() {
 // });
 
 // PARALLAX
-var aboutSection = document.getElementById('about-section');
-var parallaxInstance = new Parallax(aboutSection);
+// var aboutSection = document.getElementById('about-section');
+// var parallaxInstance = new Parallax(aboutSection);
+
+var japaneseAnimationPlayed = false;
 
 $(window).scroll(function(e){
   // console.log('scrolling');
@@ -150,4 +152,41 @@ $(window).scroll(function(e){
   var moveSpeed = 0.5;
   var scrollMod = (scrollPosition * moveSpeed);
   $('.skills-container').css({"background-position-y":scrollMod});
+
+  // Add animation on scrolling to element
+  var aboutSectionPosition = $("#about-section").offset().top;
+  var grewUpPosition = $(".grew-up").first().offset().top;
+  var livedInPosition = $(".lived-in").first().offset().top;
+  var japaneseSubtitlePosition = $(".japanese-subtitle").first().offset().top;
+
+  if(scrollPosition >= (aboutSectionPosition-100)){
+    $('.about-section__heading').addClass('animate__fadeInDown');
+  }
+  if(scrollPosition >= (grewUpPosition-100)){
+    $('.grew-up').addClass('animate__fadeInLeft');
+  }
+  if(scrollPosition >= (livedInPosition-100)){
+    $('.lived-in').addClass('animate__fadeInRight');
+  }
+  if(scrollPosition >= (japaneseSubtitlePosition-100)){
+    if(japaneseAnimationPlayed == false){
+    $('.japanese-subtitle').addClass('animate__animated');
+    $('.japanese-subtitle').addClass('animate__fadeIn');
+    $('.japanese-subtitle').addClass('animation-shown');
+    $('.english-subtitle').addClass('animation-shown');
+    japaneseAnimationPlayed = true;
+    }
+  }
+    
+  
+  console.log(scrollPosition);
+  console.log('about section');
+  console.log(aboutSectionPosition);
+});
+
+$(document).ready(function(){
+  $('.japanese-subtitle').on('mouseenter', function(){
+    $('.japanese-subtitle').removeClass('animate__animated');
+    $('.japanese-subtitle').removeClass('animate__fadeIn');
+  });
 });

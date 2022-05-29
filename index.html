@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,74 +8,66 @@
   <title>Christian Alba</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+    </style>
 </head>
+
 <body>
   <header>
-<h1>I live by a principle of always thinking outside the ...</h1>
+    <h1 class="animate__animated animate__fadeInLeft">I live by a principle of always thinking outside the ...</h1>
   </header>
 
-<div class="hero-section">
-  <div class="content">
+  <div class="hero-section">
+    <div class="square-categories">
+      <div class="square-category-container blog">
+        <a class="square-category" href="#blog">
+          <h2 class="square-category__title">Blog</h2>
+          <div class="square-category__box">
+            <img class="square-category__box__corner top-left" src="images/arrows.svg" alt="">
+            <img class="square-category__box__corner bottom-right" src="images/arrows.svg" alt="">
+          </div>
+        </a>
+      </div>
 
-    <a href="#blog-section" id="blog-button">
-    <div class="blog box">
-       <!-- <i class="fa fa-book fa-5x" aria-hidden="true"></i>  -->
-        <img class="top-left-corner" src="images/arrows.svg" alt="">
-        <img class="top-left-corner-bottom" src="images/arrows.svg" alt="">
-    </div>
+      <div class="square-category-container about">
+        <a class="square-category" href="#about">
+          <h2 class="square-category__title">About</h2>
+          <div class="square-category__box">
+            <img class="square-category__box__corner top-right" src="images/arrows.svg" alt="">
+          </div>
+        </a>
+      </div>
 
-    <div class="portfolio box">
-        <!-- <i class="fa fa-code fa-5x" aria-hidden="true"></i> -->
-        <img class="bottom-right-corner" src="images/arrows.svg" alt="">
-        <img class="bottom-right-corner-top-left" src="images/arrows.svg" alt="">
-    </div>
+      <div class="square-category-container contact">
+        <a class="square-category" href="#contact">
+          <h2 class="square-category__title">Contact</h2>
+          <div class="square-category__box">
+            <img class="square-category__box__corner bottom-left" src="images/arrows.svg" alt="">
+          </div>
+        </a>
+      </div>
 
-    <div class="contact box">
-        <!-- <i class="fa fa-id-card-o fa-5x" aria-hidden="true"></i> -->
-        <img class="bottom-left-corner" src="images/arrows.svg" alt="">
+      <div class="square-category-container portfolio">
+        <a class="square-category" href="#portfolio">
+          <h2 class="square-category__title">Portfolio</h2>
+          <div class="square-category__box">
+            <img class="square-category__box__corner top-left" src="images/arrows.svg" alt="">
+            <img class="square-category__box__corner bottom-right" src="images/arrows.svg" alt="">
+          </div>
+        </a>
+      </div>
     </div>
+  </div><!-- END OF HERO SECTION -->
 
-    <a href="#about-section" id="about-button">
-    <div class="about box">
-        <!-- <i class="fa fa-user-circle fa-5x" aria-hidden="true"></i> -->
-        <img class="top-right-corner" src="images/arrows.svg" alt="">
-    </div>
-    </a>
-  </div>
-
-  <div class="text-content">
-    <div class="blog box">
-         <h2 class="content-name">
-           Blog
-         </h2>
-    </div>
-    <div class="portfolio box">
-         <h2 class="content-name">
-          Portfolio
-         </h2>
-    </div>
-    <div class="contact box">
-       <h2 class="content-name">
-          Contact
-       </h2>
-    </div>
-
-    <div class="about box">
-       <h2 class="content-name">
-          About
-       </h2>
-    </div>
-
-  </div>
-</div><!-- END OF HERO SECTION -->
-
-<!-- <div id="div1" />
+  <!-- <div id="div1" />
 <div id="div2" /> -->
 
-<!--
+  <!--
           ^
           |
     THE TOP HEADING
@@ -82,73 +75,82 @@
     BOXES CONTAINING THE CONTENT
 -->
 
-<div id="about-section" class="about-container">
-  <div class="about" data-depth="0.2">
-    <h2 class="about-section__heading">About</h2>
-    <!-- <i class="fa fa-quote-left fa-2x" aria-hidden="true"></i> -->
-    <p>I believe the best designs are heavily influenced by our outlook in life from the different cultural encounters and openness towards the world.</p>
-    <!-- <i class="fa fa-quote-right fa-2x" aria-hidden="true"></i>  -->
-    <br>
-    <p>I <img src="images/like.svg" alt="" class="heart"> creating websites that have a sense of personality for the client to express themselves online.</p>
-    <br>
-    <p>When I'm not playing with websites I love being a chef, writer, skater, well-informed tech-enthusiast, poker player.</p>
-  </div>
-  <div class="about-section__background-image-container" data-depth="0.05">
-    <img class="about-section__background-image" src="images/dna-background.jpg" alt="">
-  </div>
-</div>
+  <div id="about-section" class="about-container">
+    <div class="about" data-depth="0.2">
+      <h2 class="animate__animated about-section__heading">About</h2>
+      <!-- <i class="fa fa-quote-left fa-2x" aria-hidden="true"></i> -->
+      <p class="animate__animated subtitle grew-up">Grew up in Mt Druitt.</p>
 
-<div class="skills-container">
-  <div class="skills">
-    <h1>Skills</h1>
-    <p>My skills consists of:- </p>
+      <p class="animate__animated subtitle lived-in">Lived in Japan for 1 year.</p>
 
-    <p>Favourite Use:</p>
+      <div class="moving-container">
+        <div class="subtitle-box japanese">
+      <p class="japanese-subtitle">私の名前はクリスチャンアルバです</p>
+        </div>
+        <div class="subtitle-box english">  
+      <p class="english-subtitle">My name is Christian Alba</p>
+        </div>  
+      </div>
 
-  <div class="fav_group">
-    <img src="images/HTML5_Logo_512.png" alt="" class="fav_img1">
-    <img src="images/css3.png" alt="" class="fav_img2">
-    <img src="images/JavaScript-logo.png" alt="" class="fav_img3">
-    <img src="images/GitHub-Mark.png" alt="" class="fav_img6">
-
+      <p class="animate__animated animate__fadeInRight paragraph">I believe the best designs are heavily influenced by our outlook in life from the different cultural encounters
+        and openness towards the world.</p>
+      <!-- <i class="fa fa-quote-right fa-2x" aria-hidden="true"></i>  -->
+      <br>
+      <p class="animate__animated animate__fadeInLeft paragraph">I <img src="images/like.svg" alt="" class="heart animate__animated animate__bounce animate__infinite	infinite"> creating websites or videos that have a sense of emotional resonance.</p>
+      <br>
+      <p class="animate__animated animate__fadeInRight paragraph">When I'm not playing with websites or videos I love being a pizza chef, writer, skater, well-informed tech-enthusiast, poker
+        player.</p>
+    </div>
+    
     <!--
-    <img src="images/jquery.png" alt="" class="fav_img4">
-    <img src="images/postgresql-logo.png" alt="" class="fav_img7">
-    <img src="images/react-logo.png" alt="" class="fav_img8">
-  -->
+    <div class="about-section__background-image-container" data-depth="0.05">
+      <img class="about-section__background-image" src="images/dna-background.jpg" alt="">
+    </div>
+     -->
   </div>
 
-    <p>Improving skill:</p>
+  <div class="skills-container">
+    <div class="skills">
+      <h1>Skills</h1>
+      <br>
+      <div class="fav_group">
+        <img src="images/HTML5_Logo_512.png" alt="" class="fav_img1">
+        <img src="images/css3.png" alt="" class="fav_img2">
+        <img src="images/JavaScript-logo.png" alt="" class="fav_img3">
+        <img src="images/GitHub-Mark.png" alt="" class="fav_img6">
+        <img src="images/premiere.jpeg" alt="" class="fav_img4">
+        <img src="images/illustrator-logo.png" alt="" class="fav_img5">
+        <img src="images/photoshop.jpeg" alt="" class="fav_img9" id="fav_img9">
+        <!--
+        <img src="images/postgresql-logo.png" alt="" class="fav_img7">
+        <img src="images/react-logo.png" alt="" class="fav_img8">
+        <img src="images/" alt="" class="">
+        -->
+      </div>
 
-    <!--
-      CHANGE IMPROVING STUFF 
-    -->
+      <p>Improving skill:</p>
 
-  <div class="least_fav_group">
-    <img src="images/img_greensock.png" alt="" class="fav_img5">
-    <img src="images/Rails-logo.png" alt="" class="least_fav1">
+      <div class="least_fav_group">
+        <p>Collaboration</p>
+        <p>Storyboarding</p>
+        <p>Storytelling</p>
+      </div>
+
+      <p>Learning:</p>
+
+      <div class="learn_group">
+        <p>To be a better human being</p>
+      </div>
+
+    </div>
   </div>
 
-    <p>Learning:</p>
+  <div class="portfolio_container">
+    <div class="portfolio">
+      <h1>Portfolio</h1>
+    </div>
 
-  <div class="learn_group">
-
-    <!-- 
-      CHANGE LEARNING STUFF
-    -->
-    <img src="images/sass.svg" alt="" class="learn3">
-    <img src="images/Webpack.png" alt="" class="learn4">
-  </div>
-
-  </div>
-</div>
-
-<div class="portfolio_container">
-  <div class="portfolio">
-    <h1>Portfolio</h1>
-  </div>
-
-  <!-- <div class="port_group">
+    <!-- <div class="port_group">
     <a href=""><img src="" alt=""></a>
     <a href=""><img src="" alt=""></a>
     <a href=""><img src="" alt=""></a>
@@ -157,32 +159,43 @@
     <a href=""><img src="" alt=""></a>
   </div> -->
 
-  <div class="row">
-    <div class="column"><img class="logo1" src="images/loomware.png"/></div>
-    <div class="column"><img class="logo2" src="images/sheetsdownunder.png"/></div>
-    <div class="column"><img src="http://lorempixel.com/200/200/technics"/></div>
-    <div class="column"><img src="http://lorempixel.com/200/200/technics"/></div>
-    <div class="column"><img src="http://lorempixel.com/200/200/technics"/></div>
-  </div>
-</div>
+    <div class="row">
+      <div class="column"><img class="logo1" src="images/loomware.png" /></div>
+      <div class="column"><img class="logo2" src="images/sheetsdownunder.png" /></div>
 
-<footer>
-<div class="social">
-  <a href="" class="social-link"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
-  <a href="" class="social-link"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
-  <a href="" class="social-link"><i class="fa fa-pinterest fa-3x" aria-hidden="true"></i></a>
-  <a href="" class="social-link"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
-  <a href="" class="social-link"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
-</div>
-<!-- <div class="parent">
+     <!---
+      <div class="column"><img src="http://lorempixel.com/200/200/technics" /></div>
+      <div class="column"><img src="http://lorempixel.com/200/200/technics" /></div>
+      <div class="column"><img src="http://lorempixel.com/200/200/technics" /></div>
+    -->
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="social">
+      <a href=""><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-pinterest fa-3x" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+      <!---
+      <a href=""><i class="fa fa-stack-overflow fa-3x" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-stack-exchange fa-3x" aria-hidden="true"></i></a>
+      -->
+
+    </div>
+
+    <!-- <div class="parent">
   <div class="custom-box">
 
   </div>
 </div> -->
-</footer>
+  </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   <script src="js/main.js"></script>
 
 </body>
+
 </html>
