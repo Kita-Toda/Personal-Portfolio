@@ -18,23 +18,16 @@
 
     Favourite:
 
-    Least Favourite:
-
     Learning:
 
 # Languages used:
-  - HTML | CSS
+  - HTML 
+  - CSS
   - jQuery
-
-# Frameworks:
-  - Foundation
+  - Javascript
 
 # Fonts:
   - Google Fonts
-  - Awesome Fonts
-
-  - Helvetica
-  - Clarendon
-  - Avenir
-  - Futura
-  - Gill Sans
+  - Roboto
+  - Open Sans
+  - Playfair Display
